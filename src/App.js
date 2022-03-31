@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import NextLaunch from './NextLaunch';
+import LastThreeLaunch from './LastThreeLaunch';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () => {
+  return(<>
+    <div className="row">
+      <div className="col s3">
+        <NextLaunch />
+      </div>
+      <div className='col s2'></div>
+      <div className='col s7'>
+        <LastThreeLaunch />
+      </div> 
+    </div> 
+  </>);
 }
 
 export default App;
